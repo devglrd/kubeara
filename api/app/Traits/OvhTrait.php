@@ -41,10 +41,10 @@ trait OvhTrait
          * You can generate new credentials with full access to your account on
          * the token creation page
          */
-        $ovh = new Api('FOjjQsPzyrCYaQvB',  // Application Key
-            'I0C4FaccY7SxA7sLv1llJikG0gOxJ7rh',  // Application Secret
+        $ovh = new Api('p0EFNW1BKmQQtxR5',  // Application Key
+            'crr7KrLQDcPfwM8ZGwnAHPPYDY5TI5vn',  // Application Secret
             'ovh-eu',      // Endpoint of API OVH Europe (List of available endpoints)
-            'LiR6tLY3799SuvaXV6PXt63QA1jZvV9O'); // Consumer Key
+            'aA4ZCRoiAwXhEHduTdPdvvH1Gp6YKHyq'); // Consumer Key
 
         return $ovh;
     }

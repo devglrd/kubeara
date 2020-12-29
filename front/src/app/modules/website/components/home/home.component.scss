@@ -1,0 +1,200 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+.content-modal {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: 999;
+  background-color: rgba(107, 107, 107, 0.69);
+}
+
+.login-box {
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  width: 50vw;
+  z-index: 9999;
+  border: 1px solid #4A4A4A;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+
+
+  .action {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+
+  .headlines {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+
+    .headlines-title {
+      color: #2A2A2A;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    .headlines-content {
+      color: #2A2A2A;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center;
+      margin: 0 10px;
+    }
+  }
+
+  .form {
+
+    .login-select {
+      margin-bottom: 10px;
+
+      .login-input {
+        box-sizing: border-box;
+        height: 43px;
+        width: 100%;
+        border: 1px solid #D0D7DD !important;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 10px;
+        box-shadow: none !important;
+
+        &::placeholder {
+          color: #414141;
+        }
+
+      }
+
+      .label {
+        height: 19px;
+        width: 119px;
+        color: #000000;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 19px;
+      }
+    }
+
+    .login-cgu {
+      margin-bottom: 20px;
+
+      .login-cgu-input {
+        box-sizing: border-box;
+        height: 21px;
+        width: 21px;
+        border: 1px solid #E3E3E3;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+        box-shadow: none !important;
+      }
+
+      .login-cgu-label {
+        color: #262626;
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .login-error-message {
+      color: white;
+      padding: 10px;
+      background-color: red;
+      border-radius: 3px;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+  }
+}

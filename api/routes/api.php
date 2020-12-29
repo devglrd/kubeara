@@ -29,7 +29,7 @@ Route::post('/register', [\App\Http\Controllers\Controller::class, 'register']);
 
 Route::post('/auth', [\App\Http\Controllers\Controller::class, 'login']);
 
-Route::get('/tenant', [\App\Http\Controllers\Controller::class, 'tenant'])->middleware('tenant.auth');
+Route::get('/app/tenant', [\App\Http\Controllers\Controller::class, 'tenant'])->middleware('tenant.auth');
 Route::middleware('tenant.auth')->group(function () {
     Route::get('/commits', [\App\Http\Controllers\Controller::class, 'commits']);
 });

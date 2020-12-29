@@ -1,0 +1,55 @@
+// Fonts
+$beu-font-text: "Codec Cold", sans-serif;
+$beu-font-cta: "Codec Warm", sans-serif;
+$beu-font-logo: "Codec Cold Logo", sans-serif;
+$beu-font-opinion: "Times New Roman", serif;
+
+// TopBar
+$beu-topbar-height: 85px;
+
+// Text color
+$beu-text-primary-color: #1B1624;
+$beu-text-secondary-color: #616161;
+$beu-text-on-background-dark: #FFFFFF;
+
+// Card
+$beu-card-text-color: #000000;
+$beu-card-primary-color: #FFFFFF;
+
+// Icons
+$beu-accent-first: #5EBFBC;
+$beu-accent-second: #00A293;
+$beu-accent-third: #5DC3F0;
+$beu-accent-fourth: #008BD2;
+$beu-accent-sixth: #E2E2E2;
+$beu-accent-seventh: #C8C7C7;
+
+// Others
+$beu-background: #FFFFFF;
+$beu-background-dark: #1B1624;
+$beu-background-grey: #f6f6f6;
+$beu-border-radius: 3px;
+$beu-transition: all 0.3s ease-in-out;
+$beu-border: 1px solid $beu-accent-sixth;
+$beu-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+// Action color
+$beu-action-color: #E83A4B;
+$beu-action-color-dark: #D1111F;
+$beu-action-text-color: #FFFFFF;
+$beu-action-disabled-color: $beu-accent-seventh;
+$beu-action-disabled-text-color: #9AA1A5;
+
+
+/* -------- Card -------- */
+$beu-card-border: 1px solid #EBE5E5;
+$beu-card-border-radius: $beu-border-radius;
+$beu-card-shadow: $beu-box-shadow;
+$beu-card-shadow-on-hover: 0 3px 8px rgba(0, 0, 0, 0.25);
+$beu-card-background: $beu-background;
+$beu-card-padding: 20px;
+$beu-card-row-thumbnail-width: 200px;
+$beu-card-thumbnail-size: 230px;
+$beu-card-margin-bottom: 20px;
+
+/* -------- Card - End -------- */

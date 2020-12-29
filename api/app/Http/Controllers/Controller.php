@@ -47,7 +47,7 @@ class Controller extends BaseController
         Artisan::call('tenants:migrate');
 
         return [
-            'tenant' => $tenant,
+            'data' => ['tenant' => $tenant]
         ];
     }
 
@@ -63,7 +63,7 @@ class Controller extends BaseController
         $token = $tenant->createToken($request->domain);
 
 
-        return ['tenant' => $tenant, 'token' => $token];
+        return ['data' => ['tenant' => $tenant, 'token' => $token]];
 
     }
 
